@@ -9,7 +9,5 @@ const initializeDatabaseConnection = () => {
     console.log("Connected To Database")
   });
 }
-const mySecret = process.env['MONGODB_PASSWORD']
-
 
 module.exports = {initializeDatabaseConnection};

@@ -17,6 +17,10 @@ app.use("/products",productRoutes)
 app.get('/', (req, res) => {
   res.send('Hello Express app!')
 });
+app.get('/*', (req, res) => {
+  res.send('Oops! this page could not be found')
+});
+
 app.listen(3000, () => {
   console.log('server started');
 });
